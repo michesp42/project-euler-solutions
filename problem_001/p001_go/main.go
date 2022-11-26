@@ -13,20 +13,15 @@ import "fmt"
 
 func main() {
 	fmt.Println(solution())
-
 }
 
 func solution() int {
 	sum := 0
 
 	for i := range [1000]int{} {
-		if i%3 == 0 {
+		if i%3 == 0 || i%5 == 0 {
 			sum += i
 			continue
-		}
-
-		if i%5 == 0 {
-			sum += i
 		}
 	}
 
