@@ -8,21 +8,10 @@
 
 #include <stdio.h>
 
-int solution(void);
+#include "solution.h"
 
 int main(void) {
   printf("%d\n", solution());
+  printf("%d\n", solution_alt());
   return 0;
-}
-
-int solution(void) {
-  int sum = 0;
-
-  for (int i = 3; i < 1000; i++) {
-    if (i % 3 == 0 || i % 5 == 0) {
-      sum += i;
-    }
-  }
-
-  return sum;
 }
