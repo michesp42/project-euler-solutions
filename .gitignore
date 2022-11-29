@@ -1,2 +1,4 @@
 target/
 .luarc.json
+*.class
+main
