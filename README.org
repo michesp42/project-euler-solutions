@@ -1,0 +1,7 @@
+
+<#+TITLE: Project Euler Solutions
+#+AUTHOR: Michael Espeña <michael.esp42@pm.me>
+#+DATE: 2022-11-29 16:41 
+#+DESCRIPTION: Readme for Project Euler solutions repository
+
+This repository contains my naive solutions to [[https://projecteuler.net][Project Euler]] challenges.
