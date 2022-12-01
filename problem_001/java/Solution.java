@@ -35,9 +35,10 @@ public class Solution {
   }
 
   /**
-   * Sum up the multiples below 1000 of a given number using the formula for an
-   * arithmetic series where the first term is equal to the common difference.
+   * Sum up the multiples below 1000 of a given number using the formula for an arithmetic series
+   * where the first term is equal to the common difference.
    *
+   * @param num the number whose multiple will be calculated
    * @return the sum of multiples of 3 or 5 below 1000.
    */
   private static int sumMul(int num) {
