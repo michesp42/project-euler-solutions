@@ -27,4 +27,18 @@
     (sum-mul 3) (sum-mul 5))
    (sum-mul 15)))
 
-(solution)
+(defn solution-alt
+  "
+  A solution using `reduce` and `range` because I just learn about them (as they
+  are in clojure) today (Thu Dec  1 05:18:35 PM PST 2022). I don't even know if
+  this is a good idea or idiomatic.
+  "
+  []
+  (-
+   (+
+    (reduce + (range 3 1000 3))
+    (reduce + (range 5 1000 5)))
+   (reduce + (range 15  1000 15))))
+
+(println (solution))
+(println (solution-alt))
