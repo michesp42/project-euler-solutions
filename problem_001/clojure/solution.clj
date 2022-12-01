@@ -32,5 +32,17 @@
         (reduce + (range 5 1000 5)))
      (reduce + (range 15  1000 15))))
 
-(println (solution))
-(println (solution-alt))
+(defn is-mul?
+  "Determine if a given number is a multiple of 3 or 5."
+  [n]
+  (or (= (mod n 3) 0)
+      (= (mod n 5) 0)))
+
+(defn sol-seq-comp
+  "Solution by reducing a sequence comprehension."
+  []
+  (reduce + (for [n (range 3 1000) :when (is-mul? n)] n)))
+
+(println (sol-arith-series))
+(println (sol-rng))
+(println (sol-seq-comp))
