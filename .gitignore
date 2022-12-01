@@ -2,3 +2,5 @@ target/
 .luarc.json
 *.class
 main
+.lsp
+.clj-kondo
