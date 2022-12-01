@@ -14,7 +14,7 @@
   (let [t (quot 999 n)] ;; -> number of multiples to be added
     (quot (* t (+ t 1) n) 2))) ;; -> sum = t * (t + 1) * n / 2
 
-(defn solution
+(defn sol-arith-series
   "
   Calculate the sum of the multiples (below 1000) of 3 and 5 minus the sum of
   the multiples of 15. We have to subtract the sum of the multiples of 15
@@ -25,12 +25,8 @@
   (- (+ (sum-mul 3) (sum-mul 5))
      (sum-mul 15)))
 
-(defn solution-alt
-  "
-  A solution using `reduce` and `range` because I just learn about them (as they
-  are in clojure) today (Thu Dec  1 05:18:35 PM PST 2022). I don't even know if
-  this is a good idea or idiomatic.
-  "
+(defn sol-rng
+  "Solution by reducing a ranges."
   []
   (- (+ (reduce + (range 3 1000 3))
         (reduce + (range 5 1000 5)))
