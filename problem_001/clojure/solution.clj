@@ -22,10 +22,8 @@
   twice, so we have to weed out the duplications.
   "
   []
-  (-
-   (+
-    (sum-mul 3) (sum-mul 5))
-   (sum-mul 15)))
+  (- (+ (sum-mul 3) (sum-mul 5))
+     (sum-mul 15)))
 
 (defn solution-alt
   "
@@ -34,11 +32,9 @@
   this is a good idea or idiomatic.
   "
   []
-  (-
-   (+
-    (reduce + (range 3 1000 3))
-    (reduce + (range 5 1000 5)))
-   (reduce + (range 15  1000 15))))
+  (- (+ (reduce + (range 3 1000 3))
+        (reduce + (range 5 1000 5)))
+     (reduce + (range 15  1000 15))))
 
 (println (solution))
 (println (solution-alt))
