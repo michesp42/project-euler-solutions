@@ -22,7 +22,9 @@
   twice, so we have to weed out the duplications.
   "
   []
-  (let [answer (- (+ (sum-mul 3) (sum-mul 5)) (sum-mul 15))]
-    (println answer)))
+  (-
+   (+
+    (sum-mul 3) (sum-mul 5))
+   (sum-mul 15)))
 
 (solution)
