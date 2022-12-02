@@ -4,3 +4,6 @@ target/
 main
 .lsp
 .clj-kondo
+Main
+Main.o
+Main.hi
