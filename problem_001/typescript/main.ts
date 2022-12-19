@@ -8,9 +8,9 @@
 
 // Solution using good old for loop.
 function solution(): number {
-  var sum = 0;
+  let sum = 0;
 
-  for (var i = 3; i < 1000; i++) {
+  for (let i = 3; i < 1000; i++) {
     if (i % 3 == 0 || i % 5 == 0) {
       sum += i;
     }
