@@ -3,8 +3,8 @@
 #include "solution.hpp"
 
 int main() {
-  std::cout << solution() << std::endl;
-  std::cout << solutionAlt() << std::endl;
+    std::cout << solution() << std::endl;
+    std::cout << solutionAlt() << std::endl;
 
-  return 0;
+    return 0;
 }

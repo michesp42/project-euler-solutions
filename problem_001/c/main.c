@@ -11,7 +11,7 @@
 #include "solution.h"
 
 int main(void) {
-  printf("%d\n", solution());
-  printf("%d\n", solution_alt());
-  return 0;
+    printf("%d\n", solution());
+    printf("%d\n", solution_alt());
+    return 0;
 }
